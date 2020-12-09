@@ -8,7 +8,7 @@ The directory should be like in the reference
 \root  
 ...\main_project  
 ... ... \modules  
-... ... ... \__\init\__\.py  
+... ... ... \_\_init\_\_.py  
 ... ... Dockerfile  
 ... ... main.py  
 ... ... requirement.txt  
