@@ -6,18 +6,18 @@ Deploy python web-app/project using Docker and NginX
 The directory should be like in the reference  
 
 \root  
-...\main_project  
-... ... \modules  
-... ... ... \_\_init\_\_.py  
-... ... Dockerfile  
-... ... main.py  
-... ... requirement.txt  
-... \nginx  
-... ... Dockerfile  
-... ... nginx.conf  
-... ... project.conf  
-... docker-compose.yml  
-... run_docker.sh  
+|...\main_project  
+|... ... |\modules  
+|... ... ... |\_\_init\_\_.py  
+|... ... |Dockerfile  
+|... ... |main.py  
+|... ... |requirement.txt  
+|... \nginx  
+|... ... |Dockerfile  
+|... ... |nginx.conf  
+|... ... |project.conf  
+|... docker-compose.yml  
+|... run_docker.sh  
 
 
 Finally, exec: `bash root\run_docker.sh`  
