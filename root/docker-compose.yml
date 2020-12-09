@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  webapplication:
+    container_name: main_project
+    restart: always
+    build: ./main_project
+    ports:
+      - "5000:5000"
+    command: gunicorn -w 1 -b 0.0.0.0:5000 main:application
+  
+  nginx:
+    container_name: nginx
+    restart: always
+    build: ./nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - webapplication:
